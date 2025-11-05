@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Analytor — Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    :root {
+      --sky-blue: #4db8ff;
+      --text-color: #1b1f23;
+      --background: #ffffff;
+      --subtle: #6b7280;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      animation: fadeIn 1.3s ease;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--sky-blue);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: var(--subtle);
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    video {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">Analytor</div>
+    <h1>We’re Launching Soon 🚀</h1>
+    <p>The smarter way to create, analyze and run tests — all in one place.</p>
+
+    <div class="video-container">
+      <!-- Autoplay + controls, no loop, no mute -->
+      <video autoplay controls>
+        <source src="dabs_intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</body>
+</html>
