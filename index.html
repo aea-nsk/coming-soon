@@ -33,6 +33,11 @@
 
 <style>
 body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a;}
+/* Header shadow when scrolling */
+header.sticky-shadow {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
 
 /* ------------------ PREMIUM HERO ------------------ */
 
@@ -144,7 +149,19 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
 
 .section {max-width:1100px; margin:40px auto; padding:0 20px;}
 .grid {display:grid; gap:25px; grid-template-columns:repeat(auto-fit, minmax(280px,1fr));}
-.card {background:white; padding:25px; border-radius:14px; box-shadow:0 4px 16px rgba(0,0,0,0.07);}
+.card {
+  background:white;
+  padding:25px;
+  border-radius:14px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow:0 10px 26px rgba(0,0,0,0.12);
+}
+
 .card h3 {color:#02458a; margin-top:0;}
 .card p {line-height:1.6;}
 
@@ -388,6 +405,17 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
 
 <!-- ********** SCROLL ANIMATION SCRIPT ********** -->
 <script>
+  // Header shadow on scroll
+  const mainHeader = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      mainHeader.classList.add("sticky-shadow");
+    } else {
+      mainHeader.classList.remove("sticky-shadow");
+    }
+  });
+
+  // Scroll-trigger animations
   const observer = new IntersectionObserver((entries)=>{
     entries.forEach(entry=>{
       if(entry.isIntersecting){
@@ -400,6 +428,5 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
     observer.observe(el);
   });
 </script>
-
 </body>
 </html>
