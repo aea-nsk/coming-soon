@@ -8,12 +8,12 @@
 <title>Analytor — India’s Scientific UPSC & MPSC Preparation System</title>
 <link rel="canonical" href="https://analytor.in/">
 
-<meta name="description" content="India’s most scientific UPSC + MPSC self-study ecosystem with study plans, analytics, AI tools, and structured guidance.">
-<meta name="keywords" content="UPSC, MPSC, IAS, civil services exam, state services, test series, study plan, analytics, AD Exams Academe, Analytor">
+<meta name="description" content="India’s scientific UPSC + MPSC self-study ecosystem with study plans, analytics, AI tools, and structured guidance.">
+<meta name="keywords" content="UPSC, MPSC, IAS, civil services exam, analytics, AD Exams Academe, Analytor">
 
 <!-- OpenGraph -->
 <meta property="og:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
-<meta property="og:description" content="India’s most scientific UPSC + MPSC self-study ecosystem with study plans, analytics, AI tools, and structured guidance.">
+<meta property="og:description" content="India’s scientific UPSC + MPSC ecosystem with study plans, analytics, AI tools, and structured guidance.">
 <meta property="og:image" content="https://analytor.in/public/og.png">
 <meta property="og:url" content="https://analytor.in/">
 <meta property="og:type" content="website">
@@ -21,7 +21,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
-<meta name="twitter:description" content="India’s most scientific UPSC + MPSC preparation ecosystem powered by AD Exams Academe.">
+<meta name="twitter:description" content="India’s scientific UPSC + MPSC preparation ecosystem powered by AD Exams Academe.">
 <meta name="twitter:image" content="https://analytor.in/public/og.png">
 
 <meta name="theme-color" content="#039EFE">
@@ -30,7 +30,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
-<link rel="manifest" href="/public/manifest.json">
 
 <style>
 body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a;}
@@ -78,7 +77,6 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
 }
 
 .hero-highlights {display:flex; flex-wrap:wrap; gap:10px 14px; margin-bottom:28px;}
-
 .hero-pill {
   padding: 6px 12px;
   border-radius: 999px;
@@ -87,9 +85,7 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
   border: 1px solid rgba(255,255,255,0.25);
 }
 
-/* Buttons */
 .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
-
 .hero-btn-primary, .hero-btn-secondary {
   border-radius: 999px;
   padding: 11px 20px;
@@ -101,26 +97,16 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
   gap:6px;
 }
 
-.hero-btn-primary {
-  background:white;
-  color:#02458a;
-}
-
-.hero-btn-primary:hover {
-  background:#f2f6ff;
-}
+.hero-btn-primary { background:white; color:#02458a; }
+.hero-btn-primary:hover { background:#f2f6ff; }
 
 .hero-btn-secondary {
   background:transparent;
   color:white;
   border:1px solid rgba(255,255,255,0.7);
 }
+.hero-btn-secondary:hover { background:rgba(255,255,255,0.12); }
 
-.hero-btn-secondary:hover {
-  background:rgba(255,255,255,0.12);
-}
-
-/* Right image */
 .hero-image-wrapper { display:flex; justify-content:center; }
 
 .hero-image-card {
@@ -133,26 +119,25 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
 }
 
 .hero-image-card img { width:100%; border-radius:14px; display:block; }
+.hero-tag { font-size:12px; opacity:0.8; margin-bottom:8px; }
 
-.hero-tag {
-  font-size:12px;
-  opacity:0.8;
-  margin-bottom:8px;
-}
-
-/* Animation */
+/* Hero animation */
 @keyframes heroFadeUp {
   from {opacity:0; transform:translateY(22px);}
   to   {opacity:1; transform:translateY(0);}
 }
 
-/* Responsive */
-@media (max-width:900px){
-  .hero-inner {grid-template-columns:1fr;}
+/* ------------------ SCROLL ANIMATIONS ------------------ */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-@media (max-width:600px){
-  .hero{padding:55px 18px 65px;}
-  .hero-title{font-size:28px;}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ------------------ EXISTING SECTIONS ------------------ */
@@ -174,6 +159,15 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
 .cta-big a {
   background:#039EFE; color:white; padding:15px 28px;
   border-radius:10px; text-decoration:none; font-size:18px; font-weight:bold;
+}
+
+/* Responsive Fixes */
+@media (max-width:900px){
+  .hero-inner {grid-template-columns:1fr;}
+}
+@media (max-width:600px){
+  .hero{padding:55px 18px 65px;}
+  .hero-title{font-size:28px;}
 }
 
 </style>
@@ -232,40 +226,40 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
   </script>
 </header>
 
-<!-- ********** NEW PREMIUM HERO ********** -->
-<section class="hero">
+<!-- ********** PREMIUM HERO WITH ANIMATION ********** -->
+<section class="hero fade-up">
   <div class="hero-inner">
 
     <!-- LEFT -->
     <div>
-      <div class="hero-kicker">UPSC & MPSC PREPARATION • INDIA</div>
+      <div class="hero-kicker fade-up">UPSC & MPSC PREPARATION • INDIA</div>
 
-      <h1 class="hero-title">
+      <h1 class="hero-title fade-up" style="transition-delay:0.1s;">
         Scientific guidance for<br>
         serious civil services aspirants.
       </h1>
 
-      <p class="hero-subtitle">
+      <p class="hero-subtitle fade-up" style="transition-delay:0.2s;">
         Analytor helps you plan, practise and reflect with structure —
-        from Prelims to Mains — using AI guidance, wellness tools and
-        analytics designed for UPSC & MPSC preparation.
+        using AI guidance, wellness tools & analytics designed specifically
+        for UPSC & MPSC.
       </p>
 
-      <div class="hero-highlights">
+      <div class="hero-highlights fade-up" style="transition-delay:0.3s;">
         <span class="hero-pill">Smart study plans</span>
         <span class="hero-pill">MCQ + Mains practice</span>
         <span class="hero-pill">Performance analytics</span>
         <span class="hero-pill">Wellness & focus tools</span>
       </div>
 
-      <div class="hero-actions">
+      <div class="hero-actions fade-up" style="transition-delay:0.4s;">
         <a href="/courses.html" class="hero-btn-primary">Explore Courses →</a>
         <a href="/pricing.html" class="hero-btn-secondary">View Plans (Coming Soon)</a>
       </div>
     </div>
 
     <!-- RIGHT -->
-    <div class="hero-image-wrapper">
+    <div class="hero-image-wrapper fade-up" style="transition-delay:0.5s;">
       <div class="hero-image-card">
         <div class="hero-tag">Analytor Preview</div>
         <img src="/public/og.png" alt="Analytor Preview">
@@ -274,48 +268,82 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
 
   </div>
 </section>
-
-<!-- FEATURES -->
+<!-- ********** FEATURES SECTION ********** -->
 <div class="section">
-  <h2 style="color:#02458a; text-align:center;">What Analytor Offers</h2>
-  <p style="text-align:center; max-width:700px; margin:10px auto 40px;">
-    A powerful combination of AI-guided study techniques, analytics, and wellness support built specifically for UPSC & MPSC aspirants.
+  <h2 class="fade-up" style="color:#02458a; text-align:center;">
+    What Analytor Offers
+  </h2>
+
+  <p class="fade-up" style="text-align:center; max-width:700px; margin:10px auto 40px;">
+    A powerful combination of AI-guided study techniques, analytics,
+    and wellness support built specifically for UPSC & MPSC aspirants.
   </p>
 
   <div class="grid">
-    <div class="card"><h3>📘 Structured Study Planner</h3><p>AI-guided daily, weekly and principle-based schedules.</p></div>
-    <div class="card"><h3>📝 MCQ + Mains Module</h3><p>Generate MCQ tests and upload Mains answers for analysis.</p></div>
-    <div class="card"><h3>📊 Smart Analytics</h3><p>Track accuracy, weak areas, performance graphs and heatmaps.</p></div>
-    <div class="card"><h3>🧠 AI Mentor + Dabs Assistant</h3><p>Personalised guidance, revision tracking and motivation.</p></div>
-    <div class="card"><h3>🧘 AWS Wellness System</h3><p>Fatigue alerts, focus timers, affirmations, streak boosts.</p></div>
-    <div class="card"><h3>🎯 Goal & Milestone Tracking</h3><p>Weekly milestones and syllabus checkpoints auto-adjusted.</p></div>
+    <div class="card fade-up" style="transition-delay:0.1s;">
+      <h3>📘 Structured Study Planner</h3>
+      <p>AI-guided daily, weekly and principle-based schedules.</p>
+    </div>
+
+    <div class="card fade-up" style="transition-delay:0.2s;">
+      <h3>📝 MCQ + Mains Module</h3>
+      <p>Generate MCQ tests and upload Mains answers for analysis.</p>
+    </div>
+
+    <div class="card fade-up" style="transition-delay:0.3s;">
+      <h3>📊 Smart Analytics</h3>
+      <p>Track accuracy, weak areas, performance graphs and heatmaps.</p>
+    </div>
+
+    <div class="card fade-up" style="transition-delay:0.4s;">
+      <h3>🧠 AI Mentor + Dabs Assistant</h3>
+      <p>Personalised guidance, revision tracking and motivation.</p>
+    </div>
+
+    <div class="card fade-up" style="transition-delay:0.5s;">
+      <h3>🧘 AWS Wellness System</h3>
+      <p>Fatigue alerts, focus timers, affirmations, streak boosts.</p>
+    </div>
+
+    <div class="card fade-up" style="transition-delay:0.6s;">
+      <h3>🎯 Goal & Milestone Tracking</h3>
+      <p>Weekly milestones and syllabus checkpoints auto-adjusted.</p>
+    </div>
   </div>
 </div>
 
-<!-- HIGHLIGHT -->
-<div class="highlight">
-  <h2>Built for UPSC & MPSC Aspirants</h2>
-  <p>
+
+<!-- ********** HIGHLIGHT STRIP ********** -->
+<div class="highlight fade-up" style="transition-delay:0.1s;">
+  <h2 class="fade-up" style="transition-delay:0.2s;">
+    Built for UPSC & MPSC Aspirants
+  </h2>
+  <p class="fade-up" style="transition-delay:0.3s;">
     Whether you are a first-time aspirant, working professional, or a repeater,
     Analytor adapts to your pace and strengths.  
     Our engine ensures consistent preparation backed by scientific focus tools.
   </p>
 </div>
 
-<!-- CTA BIG -->
-<div class="cta-big">
+
+<!-- ********** CTA BIG ********** -->
+<div class="cta-big fade-up" style="transition-delay:0.1s;">
   <h2 style="color:#02458a; margin-bottom:20px;">Ready to Begin?</h2>
   <a href="/pricing.html">Explore Plans & Begin Preparation →</a>
 </div>
 
-<!-- FOOTER -->
-<footer style="background:#02458a; color:white; padding:40px 20px; margin-top:40px;">
+
+<!-- ********** FOOTER ********** -->
+<footer style="background:#02458a; color:white; padding:40px 20px; margin-top:40px;" class="fade-up">
   <div style="max-width:1200px; margin:auto; display:grid; gap:30px;
               grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
 
     <div>
       <h2 style="margin:0;">Analytor</h2>
-      <p style="margin-top:10px;">India’s Scientific UPSC & MPSC Preparation System<br>by <strong>AD Exams Academe (AEA)</strong>.</p>
+      <p style="margin-top:10px;">
+        India’s Scientific UPSC & MPSC Preparation System<br>
+        by <strong>AD Exams Academe (AEA)</strong>.
+      </p>
     </div>
 
     <div>
@@ -341,7 +369,8 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
     <div>
       <h3 style="margin:0 0 12px;">Get in Touch</h3>
       <p style="margin:0; line-height:1.7;">
-        nashik.aea@gmail.com<br>Nashik, Maharashtra, India
+        nashik.aea@gmail.com<br>
+        Nashik, Maharashtra, India
       </p>
     </div>
 
@@ -355,6 +384,22 @@ body {margin:0; font-family:Arial, sans-serif; background:#f7faff; color:#1a1a1a
     document.getElementById("year").innerText = new Date().getFullYear();
   </script>
 </footer>
+
+
+<!-- ********** SCROLL ANIMATION SCRIPT ********** -->
+<script>
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+      }
+    });
+  }, {threshold:0.15});
+
+  document.querySelectorAll(".fade-up").forEach(el=>{
+    observer.observe(el);
+  });
+</script>
 
 </body>
 </html>
