@@ -5,113 +5,157 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- PAGE-SPECIFIC: title + description + canonical will be adjusted per file -->
 <title>Analytor FAQ — UPSC & MPSC Aspirant Questions</title>
 <link rel="canonical" href="https://analytor.in/faq.html">
-<meta name="description" content="Frequently asked questions about Analytor — plans, payments, UPSC & MPSC coverage, test engine, analytics and support.">
-<!-- Default Description (safe fallback) -->
-<meta name="description" content="Overview of Analytor’s UPSC & MPSC preparation coverage, including Prelims, Mains, CSAT, Essay, and state services modules with analytics and wellness.">
 
-<meta name="keywords" content="UPSC, MPSC, IAS, civil services exam, state services, test series, study plan, analytics, AD Exams Academe, Analytor">
+<meta name="description" content="Frequently asked questions about Analytor — subscriptions, plans, payments, test engine, analytics, study tools and support.">
+<meta name="keywords" content="UPSC, MPSC, IAS, civil services exam, preparation, test series, analytics, study plans, AD Exams Academe, Analytor">
 
-<!-- Will adjust canonical per page -->
-<link rel="canonical" href="https://analytor.in/courses.html">
-
-<!-- OpenGraph (homepage defaults, OK to keep for all pages) -->
-<meta property="og:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
-<meta property="og:description" content="India’s most scientific UPSC + MPSC self-study ecosystem with study plans, analytics, AI tools, and structured guidance.">
+<!-- OpenGraph -->
+<meta property="og:title" content="Analytor FAQ — UPSC & MPSC Aspirant Questions">
+<meta property="og:description" content="Clear and simple answers to common questions about subscriptions, payments, test engine, analytics, and preparation tools.">
 <meta property="og:image" content="https://analytor.in/public/og.png">
-<meta property="og:url" content="https://analytor.in/">
+<meta property="og:url" content="https://analytor.in/faq.html">
 <meta property="og:type" content="website">
 
-<!-- Twitter Card -->
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
-<meta name="twitter:description" content="India’s most scientific UPSC + MPSC self-study ecosystem powered by AD Exams Academe.">
-<meta name="twitter:image" content="https://analytor.in/public/og.png">
 
-<!-- Brand colour for mobile browsers -->
+<!-- Brand Colour -->
 <meta name="theme-color" content="#039EFE">
 
-<!-- Favicons & PWA -->
+<!-- Favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
 <link rel="manifest" href="/public/manifest.json">
 
-  <meta name="theme-color" content="#039EFE">
-  <title>FAQ — Analytor</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
-body {font-family:Arial,sans-serif;margin:0;padding:0;background:#f7faff;color:#1a1a1a;}
-.header {background:#039EFE;color:white;text-align:center;padding:40px 20px;}
-.container {
-  max-width:900px;margin:30px auto;background:white;padding:30px;
-  border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.06);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f7faff;
+  color: #1a1a1a;
+  line-height: 1.7;
 }
-h2 {color:#02458a;margin-top:30px;}
-.q {font-weight:bold;color:#02458a;margin:12px 0 6px;}
-.a {margin:0 0 14px 0;line-height:1.6;}
+
+/* Header shadow */
+header.sticky-shadow {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #039EFE, #02458a);
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+}
+.hero h1 {font-size: 34px; margin-bottom: 8px;}
+.hero p {font-size: 16px; opacity: .95;}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Accordion */
+.accordion {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+  padding: 25px;
+  margin-bottom: 24px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 16px 0;
+  cursor: pointer;
+}
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  font-size: 17px;
+  font-weight: bold;
+  color: #02458a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #333;
+  line-height: 1.6;
+  animation: fadeIn .3s ease-out;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+/* arrow */
+.arrow {
+  transition: transform 0.3s ease;
+}
+.faq-item.open .arrow {
+  transform: rotate(90deg);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(6px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.fade-up {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity .6s ease-out, transform .6s ease-out;
+}
+.fade-up.visible {
+  opacity: 1; transform: translateY(0);
+}
 </style>
 </head>
 
 <body>
-<div id="app-header"></div>
-<!-- ========== Analytor Header (with Logo) ========== -->
+
+<!-- ========== HEADER ========== -->
 <header style="background:#039EFE; padding:12px 20px; position:sticky; top:0; z-index:1000;">
   <style>
-    /* Desktop Nav */
     .nav-container {
-      max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between;
+      max-width:1200px; margin:auto;
+      display:flex; align-items:center; justify-content:space-between;
     }
-    .nav-logo {
-      display:flex; align-items:center; gap:10px; text-decoration:none;
-    }
-    .nav-logo img {
-      width:24px; height:24px; border-radius:4px;
-    }
-    .nav-logo span {
-      font-size:22px; font-weight:bold; color:white;
-    }
-    .nav-links {
-      display:flex; gap:25px; list-style:none; margin:0; padding:0;
-    }
-    .nav-links a {
-      color:white; text-decoration:none; font-size:15px; font-weight:500;
-    }
+    .nav-logo {display:flex; align-items:center; gap:10px; text-decoration:none;}
+    .nav-logo img {width:24px; height:24px; border-radius:4px;}
+    .nav-logo span {font-size:22px; font-weight:bold; color:white;}
+    .nav-links {display:flex; gap:25px; list-style:none;}
+    .nav-links a {color:white; text-decoration:none; font-size:15px; font-weight:500;}
 
-    /* Mobile */
-    .hamburger {
-      display:none; flex-direction:column; cursor:pointer;
-    }
-    .hamburger span {
-      width:25px; height:3px; background:white; margin:4px 0; border-radius:4px;
-    }
-    #mobileMenu {
-      display:none; background:#02458a; padding:15px;
-    }
-    #mobileMenu a {
-      display:block; color:white; text-decoration:none; padding:10px 0;
-      border-bottom:1px solid rgba(255,255,255,0.2);
-    }
+    .hamburger {display:none; flex-direction:column; cursor:pointer;}
+    .hamburger span {width:25px; height:3px; background:white; margin:4px 0;}
 
-    /* Responsive */
+    #mobileMenu {display:none; background:#02458a; padding:15px;}
+    #mobileMenu a {display:block; color:white; padding:10px 0; text-decoration:none;}
+
     @media (max-width:768px) {
-      .nav-links { display:none; }
-      .hamburger { display:flex; }
+      .nav-links {display:none;}
+      .hamburger {display:flex;}
     }
   </style>
 
   <div class="nav-container">
-
-    <!-- Logo + Text -->
     <a href="/" class="nav-logo">
       <img src="/public/favicon-32.png" alt="Analytor Logo">
       <span>Analytor</span>
     </a>
 
-    <!-- Desktop Links -->
     <ul class="nav-links">
       <li><a href="/about.html">About</a></li>
       <li><a href="/courses.html">Courses</a></li>
@@ -120,14 +164,11 @@ h2 {color:#02458a;margin-top:30px;}
       <li><a href="/contact.html">Contact</a></li>
     </ul>
 
-    <!-- Mobile Hamburger -->
     <div class="hamburger" onclick="toggleMobileMenu()">
       <span></span><span></span><span></span>
     </div>
-
   </div>
 
-  <!-- Mobile Menu -->
   <div id="mobileMenu">
     <a href="/about.html">About</a>
     <a href="/courses.html">Courses</a>
@@ -137,146 +178,214 @@ h2 {color:#02458a;margin-top:30px;}
   </div>
 
   <script>
-    function toggleMobileMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    function toggleMobileMenu(){
+      const m=document.getElementById("mobileMenu");
+      m.style.display = m.style.display==="block"?"none":"block";
     }
   </script>
-
 </header>
-<!-- ========== End Analytor Header ========== -->
+<!-- ========== END HEADER ========== -->
 
-<div class="header">
+<!-- HERO -->
+<div class="hero fade-up">
   <h1>Frequently Asked Questions</h1>
-  <p>Clear answers to common doubts</p>
+  <p>Clear answers to common UPSC & MPSC aspirant doubts</p>
 </div>
 
 <div class="container">
 
-  <h2>About Analytor</h2>
+  <!-- About Analytor -->
+  <div class="accordion fade-up">
+    <h2 style="color:#02458a;">About Analytor</h2>
 
-  <div class="q">1. What is Analytor?</div>
-  <div class="a">
-    Analytor is a scientific preparation platform for UPSC & MPSC aspirants,
-    combining study planning, analytics, AI-driven assistance and wellness tools.
+    <div class="faq-item">
+      <div class="faq-question">1. What is Analytor?
+        <span class="arrow">›</span>
+      </div>
+      <div class="faq-answer">
+        Analytor is a scientific preparation platform for UPSC & MPSC aspirants,
+        combining study planning, analytics, AI-driven support and wellness tools.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">2. Who manages Analytor?
+        <span class="arrow">›</span>
+      </div>
+      <div class="faq-answer">
+        Analytor is created and managed by <strong>AD Exams Academe (AEA)</strong>,
+        founded by Anil Dabhade.
+      </div>
+    </div>
   </div>
 
-  <div class="q">2. Who manages Analytor?</div>
-  <div class="a">
-    Analytor is created and managed by <strong>AD Exams Academe (AEA)</strong>, founded by Anil Dabhade.
+  <!-- Subscriptions & Payments -->
+  <div class="accordion fade-up" style="transition-delay:.1s;">
+    <h2 style="color:#02458a;">Subscriptions & Payments</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">3. What subscription plans do you offer?
+        <span class="arrow">›</span>
+      </div>
+      <div class="faq-answer">
+        We offer 1, 3, 6, 9 and 12-month plans starting from ₹555.
+        Details available on the Pricing page.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">4. How are payments handled?
+        <span class="arrow">›</span>
+      </div>
+      <div class="faq-answer">
+        Payments are securely processed by <strong>Razorpay</strong>.
+        We do not store any card or banking information.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">5. Is there a refund policy?
+        <span class="arrow">›</span>
+      </div>
+      <div class="faq-answer">
+        Refunds are allowed for duplicate transactions, failed activations
+        or accidental multiple payments. Full policy is on the Refund page.
+      </div>
+    </div>
   </div>
 
-  <h2>Subscriptions & Payments</h2>
+  <!-- Aspirant Experience -->
+  <div class="accordion fade-up" style="transition-delay:.2s;">
+    <h2 style="color:#02458a;">Aspirant Experience</h2>
 
-  <div class="q">3. What subscription plans do you offer?</div>
-  <div class="a">
-    We offer 1, 3, 6, 9 and 12-month plans starting from ₹555.
-    Full details available on the Pricing page.
+    <div class="faq-item">
+      <div class="faq-question">6. Does Analytor include test-taking?
+        <span class="arrow">›</span>
+      </div>
+      <div class="faq-answer">
+        Yes. Analytor includes MCQ tests, mains uploads, explanations,
+        and detailed performance analytics.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">7. Does Analytor offer personalised study plans?
+        <span class="arrow">›</span>
+      </div>
+      <div class="faq-answer">
+        Yes. Analytor builds AI-guided daily, weekly and long-term plans
+        based on your preparation style.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">8. What is AWS (Analytor Wellness System)?
+        <span class="arrow">›</span>
+      </div>
+      <div class="faq-answer">
+        AWS includes breathing timers, fatigue detection, affirmations, focus streak engine,
+        and motivation tools to support consistency.
+      </div>
+    </div>
   </div>
 
-  <div class="q">4. How are payments handled?</div>
-  <div class="a">
-    Payments are securely processed by <strong>Razorpay</strong>.
-    We do not store your card or banking information.
-  </div>
+  <!-- Account & Support -->
+  <div class="accordion fade-up" style="transition-delay:.3s;">
+    <h2 style="color:#02458a;">Account & Support</h2>
 
-  <div class="q">5. Is there a refund policy?</div>
-  <div class="a">
-    Refunds are allowed only for duplicate transactions, failed activations,
-    or accidental multiple payments. Full policy is available on the Refund page.
-  </div>
+    <div class="faq-item">
+      <div class="faq-question">9. Can I change my mobile number or email?
+        <span class="arrow">›</span>
+      </div>
+      <div class="faq-answer">
+        Yes. You can request updates through support (nashik.aea@gmail.com).
+      </div>
+    </div>
 
-  <h2>Aspirant Experience</h2>
-
-  <div class="q">6. Does Analytor include test-taking?</div>
-  <div class="a">
-    Yes. Analytor includes MCQ tests, mains answer uploads, explanations,
-    and analytics to help you measure progress.
-  </div>
-
-  <div class="q">7. Does Analytor offer personalised study plans?</div>
-  <div class="a">
-    Yes. Analytor creates AI-guided daily, weekly, and milestone-based plans
-    tailored to your preparation style.
-  </div>
-
-  <div class="q">8. What is AWS (Analytor Wellness System)?</div>
-  <div class="a">
-    AWS is our wellness engine that provides breathing timers, fatigue detection,
-    affirmations, focus streak engine and motivation tools to support consistency.
-  </div>
-
-  <h2>Account & Support</h2>
-
-  <div class="q">9. Can I change my mobile number or email?</div>
-  <div class="a">Yes. You can update your details through support (nashik.aea@gmail.com).</div>
-
-  <div class="q">10. How do I contact support?</div>
-  <div class="a">
-    Email us at <strong>nashik.aea@gmail.com</strong>.
-    Response time: 24 hours.
+    <div class="faq-item">
+      <div class="faq-question">10. How do I contact support?
+        <span class="arrow">›</span>
+      </div>
+      <div class="faq-answer">
+        Email us at <strong>nashik.aea@gmail.com</strong>.  
+        Response time: 24 hours.
+      </div>
+    </div>
   </div>
 
 </div>
-<!-- ========== Analytor Footer ========== -->
-<footer style="background:#02458a; color:white; padding:40px 20px; margin-top:40px;">
+
+<!-- ========== FOOTER ========== -->
+<footer style="background:#02458a; color:white; padding:40px 20px; margin-top:40px;" class="fade-up">
   <div style="max-width:1200px; margin:auto; display:grid; gap:30px;
               grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
 
-    <!-- Brand -->
     <div>
-      <h2 style="margin:0; color:#ffffff;">Analytor</h2>
-      <p style="margin-top:10px; line-height:1.6;">
+      <h2 style="margin:0;">Analytor</h2>
+      <p style="margin-top:10px;">
         India’s Scientific UPSC & MPSC Preparation System<br>
         by <strong>AD Exams Academe (AEA)</strong>.
       </p>
     </div>
 
-    <!-- Quick Links -->
     <div>
-      <h3 style="margin:0 0 12px; color:#ffffff;">Quick Links</h3>
-      <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
-        <li><a href="/about.html" style="color:#bfe2ff; text-decoration:none;">About Us</a></li>
-        <li><a href="/pricing.html" style="color:#bfe2ff; text-decoration:none;">Pricing</a></li>
-        <li><a href="/courses.html" style="color:#bfe2ff; text-decoration:none;">Courses</a></li>
-        <li><a href="/faq.html" style="color:#bfe2ff; text-decoration:none;">FAQ</a></li>
-        <li><a href="/contact.html" style="color:#bfe2ff; text-decoration:none;">Contact</a></li>
+      <h3 style="margin-bottom:12px;">Quick Links</h3>
+      <ul style="list-style:none; padding:0; line-height:1.9;">
+        <li><a href="/about.html" style="color:#bfe2ff;">About Us</a></li>
+        <li><a href="/pricing.html" style="color:#bfe2ff;">Pricing</a></li>
+        <li><a href="/courses.html" style="color:#bfe2ff;">Courses</a></li>
+        <li><a href="/faq.html" style="color:#bfe2ff;">FAQ</a></li>
+        <li><a href="/contact.html" style="color:#bfe2ff;">Contact</a></li>
       </ul>
     </div>
 
-    <!-- Policies -->
     <div>
-      <h3 style="margin:0 0 12px; color:#ffffff;">Policies</h3>
-      <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
-        <li><a href="/privacy.html" style="color:#bfe2ff; text-decoration:none;">Privacy Policy</a></li>
-        <li><a href="/terms.html" style="color:#bfe2ff; text-decoration:none;">Terms & Conditions</a></li>
-        <li><a href="/refund.html" style="color:#bfe2ff; text-decoration:none;">Refund Policy</a></li>
+      <h3 style="margin-bottom:12px;">Policies</h3>
+      <ul style="list-style:none; padding:0; line-height:1.9;">
+        <li><a href="/privacy.html" style="color:#bfe2ff;">Privacy Policy</a></li>
+        <li><a href="/terms.html" style="color:#bfe2ff;">Terms & Conditions</a></li>
+        <li><a href="/refund.html" style="color:#bfe2ff;">Refund Policy</a></li>
       </ul>
     </div>
 
-    <!-- Contact -->
     <div>
-      <h3 style="margin:0 0 12px; color:#ffffff;">Get in Touch</h3>
-      <p style="line-height:1.7; margin:0;">
-        nashik.aea@gmail.com<br>
-        Nashik, Maharashtra, India
-      </p>
+      <h3 style="margin-bottom:12px;">Get in Touch</h3>
+      <p style="margin:0; line-height:1.7;">nashik.aea@gmail.com<br>Nashik, Maharashtra</p>
     </div>
 
   </div>
 
-  <!-- Bottom Bar -->
   <div style="text-align:center; margin-top:35px; font-size:14px; color:#e0ecf7;">
     © <span id="year"></span> Analytor — AD Exams Academe. All Rights Reserved.
   </div>
-
-  <script>
-    document.getElementById("year").innerText = new Date().getFullYear();
-  </script>
 </footer>
-<!-- ========== End Footer ========== -->
 
-<div id="app-footer"></div>
-<script src="/include.js"></script>
+<!-- JS: Header shadow + Scroll animations + Accordion -->
+<script>
+document.getElementById("year").innerText = new Date().getFullYear();
+
+/* Header shadow */
+const headerEl = document.querySelector("header");
+window.addEventListener("scroll", () => {
+  if(window.scrollY > 10) headerEl.classList.add("sticky-shadow");
+  else headerEl.classList.remove("sticky-shadow");
+});
+
+/* Scroll animations */
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting) e.target.classList.add("visible");
+  });
+}, {threshold:0.15});
+document.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
+
+/* FAQ Accordion */
+document.querySelectorAll(".faq-item").forEach(item=>{
+  item.addEventListener("click", ()=>{
+    item.classList.toggle("open");
+  });
+});
+</script>
+
 </body>
 </html>
