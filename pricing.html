@@ -1,8 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- ANALYTOR — GLOBAL SEO & BRAND BLOCK -->
 <meta charset="UTF-8">
-<title>Pricing — Analytor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- PAGE-SPECIFIC: title + description + canonical will be adjusted per file -->
+<title>Analytor Pricing — UPSC & MPSC Plans in INR</title>
+<link rel="canonical" href="https://analytor.in/pricing.html">
+<meta name="description" content="See Analytor’s UPSC & MPSC subscription plans in INR. Affordable monthly and long-term options with full access to study plans, tests and analytics.">
+
+<!-- Default Description (safe fallback) -->
+<meta name="description" content="Overview of Analytor’s UPSC & MPSC preparation coverage, including Prelims, Mains, CSAT, Essay, and state services modules with analytics and wellness.">
+
+<meta name="keywords" content="UPSC, MPSC, IAS, civil services exam, state services, test series, study plan, analytics, AD Exams Academe, Analytor">
+
+<!-- Will adjust canonical per page -->
+<link rel="canonical" href="https://analytor.in/courses.html">
+
+<!-- OpenGraph (homepage defaults, OK to keep for all pages) -->
+<meta property="og:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
+<meta property="og:description" content="India’s most scientific UPSC + MPSC self-study ecosystem with study plans, analytics, AI tools, and structured guidance.">
+<meta property="og:image" content="https://analytor.in/public/og.png">
+<meta property="og:url" content="https://analytor.in/">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
+<meta name="twitter:description" content="India’s most scientific UPSC + MPSC self-study ecosystem powered by AD Exams Academe.">
+<meta name="twitter:image" content="https://analytor.in/public/og.png">
+
+<!-- Brand colour for mobile browsers -->
+<meta name="theme-color" content="#039EFE">
+
+<!-- Favicons & PWA -->
+<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+<link rel="manifest" href="/public/manifest.json">
+
+  <meta name="theme-color" content="#039EFE">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -40,6 +79,93 @@ async function convert(){
 
 <body onload="convert()">
 <div id="app-header"></div>
+<!-- ========== Analytor Header (with Logo) ========== -->
+<header style="background:#039EFE; padding:12px 20px; position:sticky; top:0; z-index:1000;">
+  <style>
+    /* Desktop Nav */
+    .nav-container {
+      max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between;
+    }
+    .nav-logo {
+      display:flex; align-items:center; gap:10px; text-decoration:none;
+    }
+    .nav-logo img {
+      width:24px; height:24px; border-radius:4px;
+    }
+    .nav-logo span {
+      font-size:22px; font-weight:bold; color:white;
+    }
+    .nav-links {
+      display:flex; gap:25px; list-style:none; margin:0; padding:0;
+    }
+    .nav-links a {
+      color:white; text-decoration:none; font-size:15px; font-weight:500;
+    }
+
+    /* Mobile */
+    .hamburger {
+      display:none; flex-direction:column; cursor:pointer;
+    }
+    .hamburger span {
+      width:25px; height:3px; background:white; margin:4px 0; border-radius:4px;
+    }
+    #mobileMenu {
+      display:none; background:#02458a; padding:15px;
+    }
+    #mobileMenu a {
+      display:block; color:white; text-decoration:none; padding:10px 0;
+      border-bottom:1px solid rgba(255,255,255,0.2);
+    }
+
+    /* Responsive */
+    @media (max-width:768px) {
+      .nav-links { display:none; }
+      .hamburger { display:flex; }
+    }
+  </style>
+
+  <div class="nav-container">
+
+    <!-- Logo + Text -->
+    <a href="/" class="nav-logo">
+      <img src="/public/favicon-32.png" alt="Analytor Logo">
+      <span>Analytor</span>
+    </a>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links">
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/courses.html">Courses</a></li>
+      <li><a href="/pricing.html">Pricing</a></li>
+      <li><a href="/faq.html">FAQ</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu">
+    <a href="/about.html">About</a>
+    <a href="/courses.html">Courses</a>
+    <a href="/pricing.html">Pricing</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</header>
+<!-- ========== End Analytor Header ========== -->
 
 <div class="header">
   <h1>Analytor Subscription Plans</h1>
