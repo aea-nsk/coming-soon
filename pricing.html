@@ -383,6 +383,71 @@
       observer.observe(el);
     });
   </script>
+<!-- Dabs Help Bubble -->
+<style>
+  #dabsHelp {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  #dabsHelp img {
+    width: 70px;
+    height: auto;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.25));
+    transition: transform .25s ease;
+  }
+  #dabsHelp:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Bubble message */
+  #dabsMessage {
+    position: fixed;
+    bottom: 110px;
+    right: 28px;
+    background: white;
+    color: #02458a;
+    padding: 14px 18px;
+    border-radius: 14px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.16);
+    font-size: 15px;
+    line-height: 1.4;
+    display: none;
+    max-width: 220px;
+    z-index: 9999;
+  }
+</style>
+
+<div id="dabsMessage">
+  Need help? I’m here!  
+  <br><br>
+  <a href="/contact.html" style="color:#039EFE; font-weight:bold; text-decoration:none;">
+    Contact Support →
+  </a>
+</div>
+
+<div id="dabsHelp">
+  <img src="/public/assets/dabs.png" alt="Dabs Help">
+</div>
+
+<script>
+  const dabs = document.getElementById("dabsHelp");
+  const message = document.getElementById("dabsMessage");
+  let visible = false;
+
+  dabs.addEventListener("click", () => {
+    visible = !visible;
+    message.style.display = visible ? "block" : "none";
+  });
+
+  // Auto-hide on scroll
+  window.addEventListener("scroll", () => {
+    message.style.display = "none";
+    visible = false;
+  });
+</script>
 
 </body>
 </html>
