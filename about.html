@@ -5,109 +5,142 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- PAGE-SPECIFIC: title + description + canonical will be adjusted per file -->
-
-<!-- Default Description (safe fallback) -->
-<meta name="description" content="Analytor is created by AD Exams Academe (AEA) to bring scientific structure, analytics and wellness to UPSC & MPSC preparation in India.">
-
-<meta name="keywords" content="UPSC, MPSC, IAS, civil services exam, state services, test series, study plan, analytics, AD Exams Academe, Analytor">
-
-<!-- Will adjust canonical per page -->
+<title>About Analytor — Scientific UPSC & MPSC Preparation System</title>
 <link rel="canonical" href="https://analytor.in/about.html">
-<!-- OpenGraph (homepage defaults, OK to keep for all pages) -->
-<meta property="og:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
-<meta property="og:description" content="India’s most scientific UPSC + MPSC self-study ecosystem with study plans, analytics, AI tools, and structured guidance.">
+
+<meta name="description" content="Learn about Analytor — India’s scientific UPSC & MPSC self-study system integrating study plans, analytics, AI mentoring and wellness tools.">
+<meta name="keywords" content="UPSC, MPSC, IAS, civil services preparation, AD Exams Academe, analytics, study plan, motivation, wellness">
+
+<!-- OG -->
+<meta property="og:title" content="About Analytor — Scientific UPSC & MPSC Preparation System">
+<meta property="og:description" content="Analytor combines structured study, analytics, AI mentoring and wellness support for serious UPSC & MPSC aspirants.">
 <meta property="og:image" content="https://analytor.in/public/og.png">
-<meta property="og:url" content="https://analytor.in/">
+<meta property="og:url" content="https://analytor.in/about.html">
 <meta property="og:type" content="website">
 
-<!-- Twitter Card -->
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
-<meta name="twitter:description" content="India’s most scientific UPSC + MPSC self-study ecosystem powered by AD Exams Academe.">
-<meta name="twitter:image" content="https://analytor.in/public/og.png">
 
-<!-- Brand colour for mobile browsers -->
+<!-- Branding -->
 <meta name="theme-color" content="#039EFE">
 
-<!-- Favicons & PWA -->
+<!-- Favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
 <link rel="manifest" href="/public/manifest.json">
 
-  <meta name="theme-color" content="#039EFE">
-<title>About Us — Analytor</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body {font-family: Arial, sans-serif; background:#f9fbfd; margin:0; padding:0; color:#1a1a1a;}
-  .header {background:#039EFE; color:white; padding:40px 20px; text-align:center;}
-  .section {
-    max-width:900px; margin:30px auto; background:white; padding:30px;
-    border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.06);
-  }
-  h2 {color:#02458a; margin-top:0;}
-  ul {line-height:1.7;}
-  p {line-height:1.6;}
+body {
+  font-family:Arial, sans-serif;
+  margin:0; padding:0;
+  background:#f7faff;
+  color:#1a1a1a;
+  line-height:1.7;
+}
+
+/* Header shadow */
+header.sticky-shadow {
+  box-shadow:0 6px 20px rgba(0,0,0,0.18);
+}
+
+/* Hero */
+.hero {
+  background:linear-gradient(to right, #039EFE, #02458a);
+  padding:60px 20px;
+  color:white;
+  text-align:center;
+}
+.hero h1 {
+  font-size:34px;
+  margin-bottom:8px;
+}
+.hero p {
+  font-size:16.5px;
+  opacity:0.95;
+}
+
+/* Sections */
+.container {
+  max-width:1000px;
+  margin:40px auto;
+  padding:0 20px;
+}
+.section {
+  background:white;
+  padding:28px;
+  border-radius:14px;
+  box-shadow:0 6px 24px rgba(0,0,0,0.06);
+  margin-bottom:32px;
+}
+h2 {color:#02458a; margin-top:0;}
+h3 {color:#039EFE;}
+
+/* Why cards */
+.grid {
+  display:grid;
+  gap:24px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+.card {
+  background:white;
+  padding:22px;
+  border-radius:14px;
+  box-shadow:0 4px 18px rgba(0,0,0,0.06);
+  transition:transform .2s ease-out, box-shadow .2s ease-out;
+}
+.card:hover {
+  transform:translateY(-4px);
+  box-shadow:0 10px 26px rgba(0,0,0,0.12);
+}
+
+/* Scroll animations */
+.fade-up {
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity .6s ease-out, transform .6s ease-out;
+}
+.fade-up.visible {
+  opacity:1;
+  transform:translateY(0);
+}
 </style>
 </head>
 
 <body>
-<div id="app-header"></div>
-<!-- ========== Analytor Header (with Logo) ========== -->
+
+<!-- ========== HEADER ========== -->
 <header style="background:#039EFE; padding:12px 20px; position:sticky; top:0; z-index:1000;">
   <style>
-    /* Desktop Nav */
     .nav-container {
-      max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between;
+      max-width:1200px; margin:auto;
+      display:flex; align-items:center; justify-content:space-between;
     }
-    .nav-logo {
-      display:flex; align-items:center; gap:10px; text-decoration:none;
-    }
-    .nav-logo img {
-      width:24px; height:24px; border-radius:4px;
-    }
-    .nav-logo span {
-      font-size:22px; font-weight:bold; color:white;
-    }
-    .nav-links {
-      display:flex; gap:25px; list-style:none; margin:0; padding:0;
-    }
-    .nav-links a {
-      color:white; text-decoration:none; font-size:15px; font-weight:500;
-    }
+    .nav-logo {display:flex; align-items:center; gap:10px; text-decoration:none;}
+    .nav-logo img {width:24px; height:24px; border-radius:4px;}
+    .nav-logo span {font-size:22px; font-weight:bold; color:white;}
+    .nav-links {display:flex; gap:25px; list-style:none;}
+    .nav-links a {color:white; text-decoration:none; font-size:15px; font-weight:500;}
 
-    /* Mobile */
-    .hamburger {
-      display:none; flex-direction:column; cursor:pointer;
-    }
-    .hamburger span {
-      width:25px; height:3px; background:white; margin:4px 0; border-radius:4px;
-    }
-    #mobileMenu {
-      display:none; background:#02458a; padding:15px;
-    }
+    .hamburger {display:none; flex-direction:column; cursor:pointer;}
+    .hamburger span {width:25px; height:3px; background:white; margin:4px 0;}
+    #mobileMenu {display:none; background:#02458a; padding:15px;}
     #mobileMenu a {
       display:block; color:white; text-decoration:none; padding:10px 0;
       border-bottom:1px solid rgba(255,255,255,0.2);
     }
-
-    /* Responsive */
     @media (max-width:768px) {
-      .nav-links { display:none; }
-      .hamburger { display:flex; }
+      .nav-links {display:none;}
+      .hamburger {display:flex;}
     }
   </style>
 
   <div class="nav-container">
-
-    <!-- Logo + Text -->
     <a href="/" class="nav-logo">
       <img src="/public/favicon-32.png" alt="Analytor Logo">
       <span>Analytor</span>
     </a>
 
-    <!-- Desktop Links -->
     <ul class="nav-links">
       <li><a href="/about.html">About</a></li>
       <li><a href="/courses.html">Courses</a></li>
@@ -116,14 +149,11 @@
       <li><a href="/contact.html">Contact</a></li>
     </ul>
 
-    <!-- Mobile Hamburger -->
     <div class="hamburger" onclick="toggleMobileMenu()">
       <span></span><span></span><span></span>
     </div>
-
   </div>
 
-  <!-- Mobile Menu -->
   <div id="mobileMenu">
     <a href="/about.html">About</a>
     <a href="/courses.html">Courses</a>
@@ -133,95 +163,103 @@
   </div>
 
   <script>
-    function toggleMobileMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    function toggleMobileMenu(){
+      const m=document.getElementById("mobileMenu");
+      m.style.display = m.style.display==="block"?"none":"block";
     }
   </script>
-
 </header>
-<!-- ========== End Analytor Header ========== -->
 
-
-<div class="header">
-  <h1>About AD Exams Academe & Analytor</h1>
-  <p>Empowering Civil Services Aspirants with Guidance, Analytics & Wellness</p>
+<!-- ========== HERO ========== -->
+<div class="hero fade-up">
+  <h1>About Analytor</h1>
+  <p>India’s Scientific UPSC & MPSC Preparation & Wellness Ecosystem</p>
 </div>
 
-<div class="section">
-  <h2>Who We Are</h2>
-  <p>
-    <strong>AD Exams Academe (AEA)- Formerly known as AD's IAS Academy</strong>, founded by Anil Dabhade, is an education initiative dedicated
-    to UPSC & MPSC aspirants across India.  
-    <br><br>
-    <strong>Analytor</strong> is our next-generation civil services preparation ecosystem combining
-    structured study plans, analytics, AI-guided feedback, and wellness support designed specifically for Indian aspirants.
-  </p>
+<!-- ========== MAIN CONTENT ========== -->
+<div class="container">
 
-  <h2>Our Mission</h2>
-  <ul>
-    <li>Provide reliable and scientific UPSC/MPSC preparation tools</li>
-    <li>Deliver personalised daily & weekly study plans</li>
-    <li>Empower aspirants through analytics and AI-driven reports</li>
-    <li>Improve mental wellness and consistency with AWS (Analytor Wellness System)</li>
-  </ul>
+  <div class="section fade-up">
+    <h2>Our Vision</h2>
+    <p>
+      Analytor is built with a single aim — to offer a scientific, disciplined, wellness-balanced preparation structure 
+      for serious UPSC & MPSC aspirants.  
+      Created under <strong>AD Exams Academe (AEA)</strong>, Analytor integrates planning, analytics, 
+      AI support, motivation and focus systems into one ecosystem.
+    </p>
+  </div>
 
-  <h2>Why Aspirants Trust Us</h2>
-  <ul>
-    <li>Transparent pricing in INR — no hidden charges</li>
-    <li>AI-powered study plans, analytics & personalised progress tracking</li>
-    <li>Made in India, built for Indian civil services aspirants</li>
-    <li>Support for multiple roles: Aspirant, Mentor, Setter, Admin</li>
-  </ul>
+  <div class="section fade-up" style="transition-delay:0.1s;">
+    <h2>The Problem We Solve</h2>
+    <p>
+      Civil services preparation often becomes overwhelming — scattered resources, inconsistent routines, and lack of self-monitoring.  
+      Analytor solves this through structured daily guidance, personalised analytics and a guided wellness system.
+    </p>
+  </div>
 
-  <h2>Official Details</h2>
-  <p>
-    <strong>Business Name:</strong> AD Exams Academe (AEA) - Formery known as AD's IAS Academy<br>
-    <strong>Nature of Business:</strong> Online Education Services<br>
-    <strong>Location:</strong>Nashik, Maharashtra, India<br>
-    <strong>Email:</strong>adia.nashik@gmail.com<br>
-  </p>
+  <div class="section fade-up" style="transition-delay:0.2s;">
+    <h2>Key Pillars of Analytor</h2>
+    <div class="grid">
+      <div class="card fade-up" style="transition-delay:0.25s;">
+        <h3>📘 Structured Study Plans</h3>
+        <p>Daily, weekly and monthly study blocks based on your pace, style and targets.</p>
+      </div>
+
+      <div class="card fade-up" style="transition-delay:0.3s;">
+        <h3>📊 Deep Analytics</h3>
+        <p>Track accuracy, strengths, weak areas and progress using intelligent insights.</p>
+      </div>
+
+      <div class="card fade-up" style="transition-delay:0.35s;">
+        <h3>🧠 AI Mentor</h3>
+        <p>Smart nudges, guidance suggestions and consistency coaching.</p>
+      </div>
+
+      <div class="card fade-up" style="transition-delay:0.4s;">
+        <h3>🧘 Wellness Integration</h3>
+        <p>Fatigue monitoring, mind-break prompts, affirmations and focus balancing.</p>
+      </div>
+    </div>
+  </div>
+
 </div>
-<!-- ========== Analytor Footer ========== -->
-<footer style="background:#02458a; color:white; padding:40px 20px; margin-top:40px;">
+
+<!-- FOOTER -->
+<footer style="background:#02458a; color:white; padding:40px 20px; margin-top:40px;" class="fade-up">
   <div style="max-width:1200px; margin:auto; display:grid; gap:30px;
               grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
 
-    <!-- Brand -->
     <div>
-      <h2 style="margin:0; color:#ffffff;">Analytor</h2>
+      <h2 style="margin:0;">Analytor</h2>
       <p style="margin-top:10px; line-height:1.6;">
         India’s Scientific UPSC & MPSC Preparation System<br>
         by <strong>AD Exams Academe (AEA)</strong>.
       </p>
     </div>
 
-    <!-- Quick Links -->
     <div>
-      <h3 style="margin:0 0 12px; color:#ffffff;">Quick Links</h3>
-      <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
-        <li><a href="/about.html" style="color:#bfe2ff; text-decoration:none;">About Us</a></li>
-        <li><a href="/pricing.html" style="color:#bfe2ff; text-decoration:none;">Pricing</a></li>
-        <li><a href="/courses.html" style="color:#bfe2ff; text-decoration:none;">Courses</a></li>
-        <li><a href="/faq.html" style="color:#bfe2ff; text-decoration:none;">FAQ</a></li>
-        <li><a href="/contact.html" style="color:#bfe2ff; text-decoration:none;">Contact</a></li>
+      <h3 style="margin-bottom:12px;">Quick Links</h3>
+      <ul style="list-style:none; padding:0; line-height:1.9;">
+        <li><a href="/about.html" style="color:#bfe2ff;">About Us</a></li>
+        <li><a href="/pricing.html" style="color:#bfe2ff;">Pricing</a></li>
+        <li><a href="/courses.html" style="color:#bfe2ff;">Courses</a></li>
+        <li><a href="/faq.html" style="color:#bfe2ff;">FAQ</a></li>
+        <li><a href="/contact.html" style="color:#bfe2ff;">Contact</a></li>
       </ul>
     </div>
 
-    <!-- Policies -->
     <div>
-      <h3 style="margin:0 0 12px; color:#ffffff;">Policies</h3>
-      <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
-        <li><a href="/privacy.html" style="color:#bfe2ff; text-decoration:none;">Privacy Policy</a></li>
-        <li><a href="/terms.html" style="color:#bfe2ff; text-decoration:none;">Terms & Conditions</a></li>
-        <li><a href="/refund.html" style="color:#bfe2ff; text-decoration:none;">Refund Policy</a></li>
+      <h3 style="margin-bottom:12px;">Policies</h3>
+      <ul style="list-style:none; padding:0; line-height:1.9;">
+        <li><a href="/privacy.html" style="color:#bfe2ff;">Privacy Policy</a></li>
+        <li><a href="/terms.html" style="color:#bfe2ff;">Terms & Conditions</a></li>
+        <li><a href="/refund.html" style="color:#bfe2ff;">Refund Policy</a></li>
       </ul>
     </div>
 
-    <!-- Contact -->
     <div>
-      <h3 style="margin:0 0 12px; color:#ffffff;">Get in Touch</h3>
-      <p style="line-height:1.7; margin:0;">
+      <h3 style="margin-bottom:12px;">Get in Touch</h3>
+      <p style="margin:0; line-height:1.7;">
         nashik.aea@gmail.com<br>
         Nashik, Maharashtra, India
       </p>
@@ -229,18 +267,30 @@
 
   </div>
 
-  <!-- Bottom Bar -->
   <div style="text-align:center; margin-top:35px; font-size:14px; color:#e0ecf7;">
     © <span id="year"></span> Analytor — AD Exams Academe. All Rights Reserved.
   </div>
 
   <script>
     document.getElementById("year").innerText = new Date().getFullYear();
+
+    /* Header shadow */
+    const headerEl = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 10) headerEl.classList.add("sticky-shadow");
+      else headerEl.classList.remove("sticky-shadow");
+    });
+
+    /* Scroll animations */
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting) e.target.classList.add("visible");
+      });
+    }, {threshold:0.15});
+
+    document.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
   </script>
 </footer>
-<!-- ========== End Footer ========== -->
 
-<div id="app-footer"></div>
-<script src="/include.js"></script>
 </body>
 </html>
