@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pricing — Analytor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  body {font-family:Arial, sans-serif; background:#f7faff; margin:0; padding:0; color:#1a1a1a;}
+  .header {background:#039EFE; color:white; padding:40px 20px; text-align:center;}
+  .container {
+    max-width:1100px; margin:30px auto;
+    display:grid; gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  }
+  .card {
+    background:white; padding:25px; border-radius:14px;
+    box-shadow:0 4px 18px rgba(0,0,0,0.06);
+  }
+  .card h3 {color:#02458a; margin-top:0;}
+  .price {font-size:28px; font-weight:bold; margin:10px 0; color:#039EFE;}
+  .btn {
+    display:inline-block; background:#039EFE; color:white;
+    padding:10px 18px; border-radius:8px;
+    text-decoration:none; font-weight:600; margin-top:12px;
+  }
+  .currency {margin:20px auto; text-align:center; font-size:14px; color:#02458a;}
+</style>
+
+<script>
+// Optional currency converter for international visitors
+async function convert(){
+  const inr = [555, 1365, 2460, 3960, 4560];
+  let rate = 82; // Approx USD-INR placeholder (not real-time)
+  document.getElementById('fx').innerText =
+    "Approx in USD: " + inr.map(x => "$" + (x / rate).toFixed(2)).join("  |  ");
+}
+</script>
+</head>
+
+<body onload="convert()">
+<div id="app-header"></div>
+
+<div class="header">
+  <h1>Analytor Subscription Plans</h1>
+  <p>Transparent Pricing in INR — No Hidden Charges</p>
+</div>
+
+<div class="currency"><span id="fx"></span></div>
+
+<div class="container">
+
+  <div class="card">
+    <h3>1 Month Plan</h3>
+    <div class="price">₹555</div>
+    <p>Full access to study plans, analytics, AWS wellness tools.</p>
+    <a class="btn" href="/subscribe.html">Buy Now</a>
+  </div>
+
+  <div class="card">
+    <h3>3 Month Plan</h3>
+    <div class="price">₹1365</div>
+    <p>More savings and more stability in your preparation.</p>
+    <a class="btn" href="/subscribe.html">Buy Now</a>
+  </div>
+
+  <div class="card">
+    <h3>6 Month Plan</h3>
+    <div class="price">₹2460</div>
+    <p>Ideal for serious UPSC/MPSC aspirants.</p>
+    <a class="btn" href="/subscribe.html">Buy Now</a>
+  </div>
+
+  <div class="card">
+    <h3>9 Month Plan</h3>
+    <div class="price">₹3960</div>
+    <p>Long-term guidance + AWS streak engine + analytics.</p>
+    <a class="btn" href="/subscribe.html">Buy Now</a>
+  </div>
+
+  <div class="card">
+    <h3>12 Month Plan</h3>
+    <div class="price">₹4560</div>
+    <p>Best value for long-term civil services preparation.</p>
+    <a class="btn" href="/subscribe.html">Buy Now</a>
+  </div>
+
+</div>
+
+<div id="app-footer"></div>
+<script src="/include.js"></script>
+</body>
+</html>
