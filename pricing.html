@@ -1,277 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- ANALYTOR — GLOBAL SEO & BRAND BLOCK -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ANALYTOR — GLOBAL SEO & BRAND BLOCK -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- PAGE-SPECIFIC: title + description + canonical will be adjusted per file -->
-<title>Analytor Pricing — UPSC & MPSC Plans in INR</title>
-<link rel="canonical" href="https://analytor.in/pricing.html">
-<meta name="description" content="See Analytor’s UPSC & MPSC subscription plans in INR. Affordable monthly and long-term options with full access to study plans, tests and analytics.">
+  <title>Analytor Pricing — UPSC & MPSC Plans in INR</title>
+  <link rel="canonical" href="https://analytor.in/pricing.html">
 
-<!-- Default Description (safe fallback) -->
-<meta name="description" content="Overview of Analytor’s UPSC & MPSC preparation coverage, including Prelims, Mains, CSAT, Essay, and state services modules with analytics and wellness.">
+  <meta name="description" content="See Analytor’s UPSC & MPSC subscription plans in INR. Affordable monthly and long-term options with full access to study plans, tests, analytics and wellness tools.">
+  <meta name="keywords" content="UPSC, MPSC, IAS, civil services exam, state services, test series, study plan, analytics, AD Exams Academe, Analytor">
 
-<meta name="keywords" content="UPSC, MPSC, IAS, civil services exam, state services, test series, study plan, analytics, AD Exams Academe, Analytor">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
+  <meta property="og:description" content="India’s most scientific UPSC + MPSC self-study ecosystem with study plans, analytics, AI tools, and structured guidance.">
+  <meta property="og:image" content="https://analytor.in/public/og.png">
+  <meta property="og:url" content="https://analytor.in/pricing.html">
+  <meta property="og:type" content="website">
 
-<!-- Will adjust canonical per page -->
-<link rel="canonical" href="https://analytor.in/courses.html">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
+  <meta name="twitter:description" content="India’s most scientific UPSC + MPSC self-study ecosystem powered by AD Exams Academe.">
+  <meta name="twitter:image" content="https://analytor.in/public/og.png">
 
-<!-- OpenGraph (homepage defaults, OK to keep for all pages) -->
-<meta property="og:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
-<meta property="og:description" content="India’s most scientific UPSC + MPSC self-study ecosystem with study plans, analytics, AI tools, and structured guidance.">
-<meta property="og:image" content="https://analytor.in/public/og.png">
-<meta property="og:url" content="https://analytor.in/">
-<meta property="og:type" content="website">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Analytor — India’s Scientific UPSC & MPSC Preparation System">
-<meta name="twitter:description" content="India’s most scientific UPSC + MPSC self-study ecosystem powered by AD Exams Academe.">
-<meta name="twitter:image" content="https://analytor.in/public/og.png">
-
-<!-- Brand colour for mobile browsers -->
-<meta name="theme-color" content="#039EFE">
-
-<!-- Favicons & PWA -->
-<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
-<link rel="manifest" href="/public/manifest.json">
-
+  <!-- Brand colour for mobile browsers -->
   <meta name="theme-color" content="#039EFE">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicons & PWA -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+  <link rel="manifest" href="/public/manifest.json">
 
-<style>
-  body {font-family:Arial, sans-serif; background:#f7faff; margin:0; padding:0; color:#1a1a1a;}
-  .header {background:#039EFE; color:white; padding:40px 20px; text-align:center;}
-  .container {
-    max-width:1100px; margin:30px auto;
-    display:grid; gap:20px;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  }
-  .card {
-    background:white; padding:25px; border-radius:14px;
-    box-shadow:0 4px 18px rgba(0,0,0,0.06);
-  }
-  .card h3 {color:#02458a; margin-top:0;}
-  .price {font-size:28px; font-weight:bold; margin:10px 0; color:#039EFE;}
-  .btn {
-    display:inline-block; background:#039EFE; color:white;
-    padding:10px 18px; border-radius:8px;
-    text-decoration:none; font-weight:600; margin-top:12px;
-  }
-  .currency {margin:20px auto; text-align:center; font-size:14px; color:#02458a;}
-</style>
-
-<script>
-// Optional currency converter for international visitors
-async function convert(){
-  const inr = [555, 1365, 2460, 3960, 4560];
-  let rate = 82; // Approx USD-INR placeholder (not real-time)
-  document.getElementById('fx').innerText =
-    "Approx in USD: " + inr.map(x => "$" + (x / rate).toFixed(2)).join("  |  ");
-}
-</script>
-</head>
-
-<body onload="convert()">
-<div id="app-header"></div>
-<!-- ========== Analytor Header (with Logo) ========== -->
-<header style="background:#039EFE; padding:12px 20px; position:sticky; top:0; z-index:1000;">
   <style>
-    /* Desktop Nav */
-    .nav-container {
-      max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between;
-    }
-    .nav-logo {
-      display:flex; align-items:center; gap:10px; text-decoration:none;
-    }
-    .nav-logo img {
-      width:24px; height:24px; border-radius:4px;
-    }
-    .nav-logo span {
-      font-size:22px; font-weight:bold; color:white;
-    }
-    .nav-links {
-      display:flex; gap:25px; list-style:none; margin:0; padding:0;
-    }
-    .nav-links a {
-      color:white; text-decoration:none; font-size:15px; font-weight:500;
+    body {
+      font-family:Arial, sans-serif;
+      background:#f7faff;
+      margin:0;
+      padding:0;
+      color:#1a1a1a;
     }
 
-    /* Mobile */
-    .hamburger {
-      display:none; flex-direction:column; cursor:pointer;
-    }
-    .hamburger span {
-      width:25px; height:3px; background:white; margin:4px 0; border-radius:4px;
-    }
-    #mobileMenu {
-      display:none; background:#02458a; padding:15px;
-    }
-    #mobileMenu a {
-      display:block; color:white; text-decoration:none; padding:10px 0;
-      border-bottom:1px solid rgba(255,255,255,0.2);
+    /* Header shadow on scroll */
+    header.sticky-shadow {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.18);
     }
 
-    /* Responsive */
-    @media (max-width:768px) {
-      .nav-links { display:none; }
-      .hamburger { display:flex; }
+    .pricing-hero {
+      background: radial-gradient(circle at top left, #4fc4ff 0, #039EFE 40%, #02458a 100%);
+      color:white;
+      padding:60px 20px 50px;
+      text-align:center;
+    }
+    .pricing-hero h1 {
+      font-size:30px;
+      margin-bottom:10px;
+    }
+    .pricing-hero p {
+      font-size:16px;
+      max-width:650px;
+      margin:0 auto;
+      opacity:0.95;
+    }
+
+    .container {
+      max-width:1100px;
+      margin:30px auto 50px;
+      padding:0 20px;
+      display:grid;
+      gap:20px;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    }
+
+    .card {
+      background:white;
+      padding:25px;
+      border-radius:14px;
+      box-shadow:0 4px 18px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow:0 10px 26px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+      color:#02458a;
+      margin-top:0;
+    }
+    .price {
+      font-size:28px;
+      font-weight:bold;
+      margin:10px 0;
+      color:#039EFE;
+    }
+    .card p {
+      line-height:1.6;
+      font-size:14px;
+      color:#333;
+    }
+    .btn {
+      display:inline-block;
+      background:#039EFE;
+      color:white;
+      padding:10px 18px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      margin-top:12px;
+      font-size:14px;
+    }
+
+    .currency {
+      margin:18px auto 10px;
+      text-align:center;
+      font-size:13px;
+      color:#02458a;
+    }
+
+    /* Coming Soon banner */
+    .coming-banner {
+      max-width:900px;
+      margin:25px auto 10px;
+      padding:18px 18px;
+      background:#fff7e8;
+      border-left:4px solid #f5a623;
+      border-radius:10px;
+      box-shadow:0 4px 14px rgba(0,0,0,0.05);
+      font-size:14px;
+      line-height:1.7;
+      color:#5a4620;
+    }
+    .coming-banner strong {
+      color:#c27605;
+    }
+
+    /* Scroll animations */
+    .fade-up {
+      opacity:0;
+      transform:translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-up.visible {
+      opacity:1;
+      transform:translateY(0);
     }
   </style>
 
-  <div class="nav-container">
-
-    <!-- Logo + Text -->
-    <a href="/" class="nav-logo">
-      <img src="/public/favicon-32.png" alt="Analytor Logo">
-      <span>Analytor</span>
-    </a>
-
-    <!-- Desktop Links -->
-    <ul class="nav-links">
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/courses.html">Courses</a></li>
-      <li><a href="/pricing.html">Pricing</a></li>
-      <li><a href="/faq.html">FAQ</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-    </ul>
-
-    <!-- Mobile Hamburger -->
-    <div class="hamburger" onclick="toggleMobileMenu()">
-      <span></span><span></span><span></span>
-    </div>
-
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobileMenu">
-    <a href="/about.html">About</a>
-    <a href="/courses.html">Courses</a>
-    <a href="/pricing.html">Pricing</a>
-    <a href="/faq.html">FAQ</a>
-    <a href="/contact.html">Contact</a>
-  </div>
-
   <script>
-    function toggleMobileMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    // Optional currency converter for international visitors (approximate only)
+    function convert(){
+      const inr = [555, 1365, 2460, 3960, 4560];
+      var rate = 82; // Approx USD-INR placeholder (not real-time)
+      var fx = document.getElementById('fx');
+      if(!fx) return;
+      fx.innerText =
+        "Approx in USD: " + inr.map(x => "$" + (x / rate).toFixed(2)).join("  |  ");
     }
   </script>
+</head>
 
-</header>
-<!-- ========== End Analytor Header ========== -->
+<body onload="convert()">
 
-<div class="header">
-  <h1>Analytor Subscription Plans</h1>
-  <p>Transparent Pricing in INR — No Hidden Charges</p>
-</div>
+  <!-- ========== Analytor Header (with Logo) ========== -->
+  <header style="background:#039EFE; padding:12px 20px; position:sticky; top:0; z-index:1000;">
+    <style>
+      .nav-container {
+        max-width:1200px; margin:auto;
+        display:flex; align-items:center; justify-content:space-between;
+      }
+      .nav-logo {
+        display:flex; align-items:center; gap:10px; text-decoration:none;
+      }
+      .nav-logo img {
+        width:24px; height:24px; border-radius:4px;
+      }
+      .nav-logo span {
+        font-size:22px; font-weight:bold; color:white;
+      }
+      .nav-links {
+        display:flex; gap:25px; list-style:none; margin:0; padding:0;
+      }
+      .nav-links a {
+        color:white; text-decoration:none; font-size:15px; font-weight:500;
+      }
+      .hamburger {
+        display:none; flex-direction:column; cursor:pointer;
+      }
+      .hamburger span {
+        width:25px; height:3px; background:white; margin:4px 0; border-radius:4px;
+      }
+      #mobileMenu {
+        display:none; background:#02458a; padding:15px;
+      }
+      #mobileMenu a {
+        display:block; color:white; text-decoration:none; padding:10px 0;
+        border-bottom:1px solid rgba(255,255,255,0.2);
+      }
+      @media (max-width:768px) {
+        .nav-links { display:none; }
+        .hamburger { display:flex; }
+      }
+    </style>
 
-<div class="currency"><span id="fx"></span></div>
+    <div class="nav-container">
+      <!-- Logo + Text -->
+      <a href="/" class="nav-logo">
+        <img src="/public/favicon-32.png" alt="Analytor Logo">
+        <span>Analytor</span>
+      </a>
 
-<div class="container">
-
-  <div class="card">
-    <h3>1 Month Plan</h3>
-    <div class="price">₹555</div>
-    <p>Full access to study plans, analytics, AWS wellness tools.</p>
-    <a class="btn" href="/subscribe.html">Buy Now</a>
-  </div>
-
-  <div class="card">
-    <h3>3 Month Plan</h3>
-    <div class="price">₹1365</div>
-    <p>More savings and more stability in your preparation.</p>
-    <a class="btn" href="/subscribe.html">Buy Now</a>
-  </div>
-
-  <div class="card">
-    <h3>6 Month Plan</h3>
-    <div class="price">₹2460</div>
-    <p>Ideal for serious UPSC/MPSC aspirants.</p>
-    <a class="btn" href="/subscribe.html">Buy Now</a>
-  </div>
-
-  <div class="card">
-    <h3>9 Month Plan</h3>
-    <div class="price">₹3960</div>
-    <p>Long-term guidance + AWS streak engine + analytics.</p>
-    <a class="btn" href="/subscribe.html">Buy Now</a>
-  </div>
-
-  <div class="card">
-    <h3>12 Month Plan</h3>
-    <div class="price">₹4560</div>
-    <p>Best value for long-term civil services preparation.</p>
-    <a class="btn" href="/subscribe.html">Buy Now</a>
-  </div>
-
-</div>
-
-<!-- ========== Analytor Footer ========== -->
-<footer style="background:#02458a; color:white; padding:40px 20px; margin-top:40px;">
-  <div style="max-width:1200px; margin:auto; display:grid; gap:30px;
-              grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
-
-    <!-- Brand -->
-    <div>
-      <h2 style="margin:0; color:#ffffff;">Analytor</h2>
-      <p style="margin-top:10px; line-height:1.6;">
-        India’s Scientific UPSC & MPSC Preparation System<br>
-        by <strong>AD Exams Academe (AEA)</strong>.
-      </p>
-    </div>
-
-    <!-- Quick Links -->
-    <div>
-      <h3 style="margin:0 0 12px; color:#ffffff;">Quick Links</h3>
-      <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
-        <li><a href="/about.html" style="color:#bfe2ff; text-decoration:none;">About Us</a></li>
-        <li><a href="/pricing.html" style="color:#bfe2ff; text-decoration:none;">Pricing</a></li>
-        <li><a href="/courses.html" style="color:#bfe2ff; text-decoration:none;">Courses</a></li>
-        <li><a href="/faq.html" style="color:#bfe2ff; text-decoration:none;">FAQ</a></li>
-        <li><a href="/contact.html" style="color:#bfe2ff; text-decoration:none;">Contact</a></li>
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/courses.html">Courses</a></li>
+        <li><a href="/pricing.html">Pricing</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
+
+      <!-- Mobile Hamburger -->
+      <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </div>
     </div>
 
-    <!-- Policies -->
-    <div>
-      <h3 style="margin:0 0 12px; color:#ffffff;">Policies</h3>
-      <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
-        <li><a href="/privacy.html" style="color:#bfe2ff; text-decoration:none;">Privacy Policy</a></li>
-        <li><a href="/terms.html" style="color:#bfe2ff; text-decoration:none;">Terms & Conditions</a></li>
-        <li><a href="/refund.html" style="color:#bfe2ff; text-decoration:none;">Refund Policy</a></li>
-      </ul>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu">
+      <a href="/about.html">About</a>
+      <a href="/courses.html">Courses</a>
+      <a href="/pricing.html">Pricing</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/contact.html">Contact</a>
     </div>
 
-    <!-- Contact -->
-    <div>
-      <h3 style="margin:0 0 12px; color:#ffffff;">Get in Touch</h3>
-      <p style="line-height:1.7; margin:0;">
-        nashik.aea@gmail.com<br>
-        Nashik, Maharashtra, India
-      </p>
-    </div>
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+      }
+    </script>
+  </header>
+  <!-- ========== End Analytor Header ========== -->
 
+  <!-- PRICING HERO -->
+  <section class="pricing-hero fade-up">
+    <h1>Analytor Subscription Plans</h1>
+    <p>Transparent pricing in INR for serious UPSC & MPSC aspirants — full access to study plans, analytics and wellness tools.</p>
+  </section>
+
+  <!-- COMING SOON BANNER -->
+  <div class="coming-banner fade-up" style="transition-delay:0.1s;">
+    <strong>Analytor subscriptions are launching soon.</strong><br>
+    We are in the final stage of payment gateway (Razorpay) verification and internal testing.
+    You can review all plans below; the <em>Buy Now</em> feature will be activated once the subscription system goes live.
   </div>
 
-  <!-- Bottom Bar -->
-  <div style="text-align:center; margin-top:35px; font-size:14px; color:#e0ecf7;">
-    © <span id="year"></span> Analytor — AD Exams Academe. All Rights Reserved.
+  <!-- Currency helper -->
+  <div class="currency fade-up" style="transition-delay:0.2s;">
+    <span id="fx"></span>
   </div>
 
+  <!-- PRICING CARDS -->
+  <div class="container">
+    <div class="card fade-up" style="transition-delay:0.1s;">
+      <h3>1 Month Plan</h3>
+      <div class="price">₹555</div>
+      <p>Full access to study plans, test tools, analytics and AWS wellness for 30 days.</p>
+      <a class="btn" href="/subscribe.html">Buy Now (Coming Soon)</a>
+    </div>
+
+    <div class="card fade-up" style="transition-delay:0.2s;">
+      <h3>3 Month Plan</h3>
+      <div class="price">₹1365</div>
+      <p>Stability + savings — ideal for focused short-term UPSC/MPSC preparation.</p>
+      <a class="btn" href="/subscribe.html">Buy Now (Coming Soon)</a>
+    </div>
+
+    <div class="card fade-up" style="transition-delay:0.3s;">
+      <h3>6 Month Plan</h3>
+      <div class="price">₹2460</div>
+      <p>Balanced duration to cover core syllabus, tests, revision and reflection cycles.</p>
+      <a class="btn" href="/subscribe.html">Buy Now (Coming Soon)</a>
+    </div>
+
+    <div class="card fade-up" style="transition-delay:0.4s;">
+      <h3>9 Month Plan</h3>
+      <div class="price">₹3960</div>
+      <p>Ideal for full-year attempt planning with deeper analytics and AWS streak support.</p>
+      <a class="btn" href="/subscribe.html">Buy Now (Coming Soon)</a>
+    </div>
+
+    <div class="card fade-up" style="transition-delay:0.5s;">
+      <h3>12 Month Plan</h3>
+      <div class="price">₹4560</div>
+      <p>Best value for serious aspirants who want long-term, steady preparation guidance.</p>
+      <a class="btn" href="/subscribe.html">Buy Now (Coming Soon)</a>
+    </div>
+  </div>
+
+  <!-- ========== Analytor Footer ========== -->
+  <footer style="background:#02458a; color:white; padding:40px 20px; margin-top:40px;" class="fade-up">
+    <div style="max-width:1200px; margin:auto; display:grid; gap:30px;
+                grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
+
+      <!-- Brand -->
+      <div>
+        <h2 style="margin:0; color:#ffffff;">Analytor</h2>
+        <p style="margin-top:10px; line-height:1.6;">
+          India’s Scientific UPSC & MPSC Preparation System<br>
+          by <strong>AD Exams Academe (AEA)</strong>.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 style="margin:0 0 12px; color:#ffffff;">Quick Links</h3>
+        <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
+          <li><a href="/about.html" style="color:#bfe2ff; text-decoration:none;">About Us</a></li>
+          <li><a href="/pricing.html" style="color:#bfe2ff; text-decoration:none;">Pricing</a></li>
+          <li><a href="/courses.html" style="color:#bfe2ff; text-decoration:none;">Courses</a></li>
+          <li><a href="/faq.html" style="color:#bfe2ff; text-decoration:none;">FAQ</a></li>
+          <li><a href="/contact.html" style="color:#bfe2ff; text-decoration:none;">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Policies -->
+      <div>
+        <h3 style="margin:0 0 12px; color:#ffffff;">Policies</h3>
+        <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
+          <li><a href="/privacy.html" style="color:#bfe2ff; text-decoration:none;">Privacy Policy</a></li>
+          <li><a href="/terms.html" style="color:#bfe2ff; text-decoration:none;">Terms & Conditions</a></li>
+          <li><a href="/refund.html" style="color:#bfe2ff; text-decoration:none;">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 style="margin:0 0 12px; color:#ffffff;">Get in Touch</h3>
+        <p style="line-height:1.7; margin:0;">
+          nashik.aea@gmail.com<br>
+          Nashik, Maharashtra, India
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div style="text-align:center; margin-top:35px; font-size:14px; color:#e0ecf7;">
+      © <span id="year"></span> Analytor — AD Exams Academe. All Rights Reserved.
+    </div>
+
+    <script>
+      document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
+  </footer>
+  <!-- ========== End Footer ========== -->
+
+  <!-- Header shadow + scroll animations -->
   <script>
-    document.getElementById("year").innerText = new Date().getFullYear();
-  </script>
-</footer>
-<!-- ========== End Footer ========== -->
+    // Header shadow on scroll
+    const mainHeader = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 10) {
+        mainHeader.classList.add("sticky-shadow");
+      } else {
+        mainHeader.classList.remove("sticky-shadow");
+      }
+    });
 
-<div id="app-footer"></div>
-<script src="/include.js"></script>
+    // Scroll-trigger animations
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {threshold:0.15});
+
+    document.querySelectorAll(".fade-up").forEach(el=>{
+      observer.observe(el);
+    });
+  </script>
+
 </body>
 </html>
