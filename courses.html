@@ -9,7 +9,6 @@
 <link rel="canonical" href="https://analytor.in/courses.html">
 
 <meta name="description" content="Overview of Analytor’s UPSC & MPSC preparation coverage, including Prelims, Mains, CSAT, Essay, and state services modules with analytics and wellness.">
-
 <meta name="keywords" content="UPSC, MPSC, IAS, civil services exam, state services, test series, study plan, analytics, AD Exams Academe, Analytor">
 
 <!-- OpenGraph -->
@@ -35,24 +34,85 @@
 <link rel="manifest" href="/public/manifest.json">
 
 <style>
-body {font-family:Arial, sans-serif; margin:0; padding:0; background:#f7faff; color:#1a1a1a; line-height:1.7;}
-.header {background:#039EFE; color:white; padding:40px 20px; text-align:center;}
-.container {max-width:1000px; margin:30px auto; padding:20px;}
-.section {
-  background:white; padding:30px; border-radius:12px;
-  box-shadow:0 4px 20px rgba(0,0,0,0.06); margin-bottom:30px;
+body {
+  font-family:Arial, sans-serif;
+  margin:0; padding:0;
+  background:#f7faff; color:#1a1a1a;
+  line-height:1.7;
 }
+
+/* Header shadow */
+header.sticky-shadow {
+  box-shadow:0 6px 20px rgba(0,0,0,0.18);
+}
+
+/* Hero */
+.header {
+  background:linear-gradient(to right, #039EFE, #02458a);
+  color:white;
+  padding:55px 20px;
+  text-align:center;
+}
+.header h1 {font-size:34px; margin:0 0 8px;}
+.header p {font-size:17px; opacity:0.95;}
+
+/* Section styling */
+.container {
+  max-width:1000px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+.section {
+  background:white;
+  padding:28px;
+  border-radius:14px;
+  box-shadow:0 6px 24px rgba(0,0,0,0.06);
+  margin-bottom:32px;
+}
+
 h2 {color:#02458a; margin-top:0;}
 h3 {color:#039EFE;}
 ul {margin-left:20px;}
 .module {
-  padding:15px; background:#f2f9ff; border-left:4px solid #039EFE;
-  border-radius:6px; margin-bottom:15px;
+  padding:15px;
+  background:#f2f8ff;
+  border-left:4px solid #039EFE;
+  border-radius:6px;
+  margin-bottom:15px;
 }
 
-/* Footer spacing fix */
-.page-end-space {
-  height: 40px;
+/* Meet Dabs mini strip */
+.meet-dabs {
+  padding:50px 20px;
+  background:#eef7ff;
+  border-top:3px solid #bfe0ff;
+  border-bottom:3px solid #bfe0ff;
+  margin-top:40px;
+}
+.meet-dabs-grid {
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+@media (max-width:768px) {
+  .meet-dabs-grid {
+    grid-template-columns:1fr;
+  }
+}
+
+/* Scroll animations */
+.fade-up {
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity .6s ease-out, transform .6s ease-out;
+}
+.fade-up.visible {
+  opacity:1;
+  transform:translateY(0);
 }
 </style>
 </head>
@@ -63,37 +123,27 @@ ul {margin-left:20px;}
 <header style="background:#039EFE; padding:12px 20px; position:sticky; top:0; z-index:1000;">
   <style>
     .nav-container {
-      max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between;
+      max-width:1200px; margin:auto;
+      display:flex; align-items:center; justify-content:space-between;
     }
-    .nav-logo {
-      display:flex; align-items:center; gap:10px; text-decoration:none;
-    }
-    .nav-logo img {
-      width:24px; height:24px; border-radius:4px;
-    }
-    .nav-logo span {
-      font-size:22px; font-weight:bold; color:white;
-    }
-    .nav-links { display:flex; gap:25px; list-style:none; margin:0; padding:0; }
-    .nav-links a {
-      color:white; text-decoration:none; font-size:15px; font-weight:500;
-    }
+    .nav-logo {display:flex; align-items:center; gap:10px; text-decoration:none;}
+    .nav-logo img {width:24px; height:24px; border-radius:4px;}
+    .nav-logo span {font-size:22px; font-weight:bold; color:white;}
+    .nav-links {display:flex; gap:25px; list-style:none;}
+    .nav-links a {color:white; text-decoration:none; font-size:15px; font-weight:500;}
 
-    .hamburger { display:none; flex-direction:column; cursor:pointer; }
-    .hamburger span { width:25px; height:3px; background:white; margin:4px 0; border-radius:4px; }
-
-    #mobileMenu {
-      display:none; background:#02458a; padding:15px;
-    }
-
+    .hamburger {display:none; flex-direction:column; cursor:pointer;}
+    .hamburger span {width:25px; height:3px; background:white; margin:4px 0;}
+    #mobileMenu {display:none; background:#02458a; padding:15px;}
     #mobileMenu a {
-      display:block; color:white; text-decoration:none; padding:10px 0;
+      display:block; color:white; padding:10px 0;
+      text-decoration:none;
       border-bottom:1px solid rgba(255,255,255,0.2);
     }
 
     @media (max-width:768px) {
-      .nav-links { display:none; }
-      .hamburger { display:flex; }
+      .nav-links {display:none;}
+      .hamburger {display:flex;}
     }
   </style>
 
@@ -127,20 +177,21 @@ ul {margin-left:20px;}
   <script>
     function toggleMobileMenu() {
       const menu = document.getElementById("mobileMenu");
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
     }
   </script>
 </header>
 <!-- ========== End Header ========== -->
 
-<div class="header">
+<!-- HERO -->
+<div class="header fade-up">
   <h1>Analytor Course Overview</h1>
   <p>Your Guided UPSC & MPSC Preparation System</p>
 </div>
 
 <div class="container">
 
-  <div class="section">
+  <div class="section fade-up">
     <h2>What Analytor Offers</h2>
     <p>
       Analytor is a complete UPSC & MPSC preparation ecosystem designed to support aspirants through
@@ -148,7 +199,7 @@ ul {margin-left:20px;}
     </p>
   </div>
 
-  <div class="section">
+  <div class="section fade-up" style="transition-delay:0.1s;">
     <h2>Courses We Support</h2>
 
     <h3>UPSC Civil Services Examination</h3>
@@ -169,7 +220,7 @@ ul {margin-left:20px;}
     </ul>
   </div>
 
-  <div class="section">
+  <div class="section fade-up" style="transition-delay:0.2s;">
     <h2>Analytor Modules Included</h2>
 
     <div class="module">
@@ -196,22 +247,46 @@ ul {margin-left:20px;}
 
 </div>
 
-<div class="page-end-space"></div>
+<!-- MEET DABS -->
+<div class="meet-dabs fade-up" style="transition-delay:0.25s;">
+  <div class="meet-dabs-grid">
+    <div>
+      <h2 style="color:#02458a;">Meet Dabs — Your Study Companion</h2>
+      <p style="color:#345;">
+        Dabs helps you stay consistent, motivated and focused during UPSC/MPSC preparation —
+        reminding you to take breaks, supporting long study sessions, and guiding you through tough phases.
+      </p>
 
-<!-- ========== Footer ========== -->
-<footer style="background:#02458a; color:white; padding:40px 20px;">
+      <ul style="line-height:1.8; color:#333; padding-left:18px;">
+        <li>Fatigue alerts & focus reminders</li>
+        <li>Consistency & streak coaching</li>
+        <li>Daily motivation and nudges</li>
+        <li>Helps balance study + wellness</li>
+      </ul>
+    </div>
 
+    <div style="text-align:center;">
+      <img src="/public/assets/dabs.png" alt="Dabs Mascot" style="max-width:270px; animation:breathe 3s ease-in-out infinite;">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer style="background:#02458a; color:white; padding:40px 20px; margin-top:40px;" class="fade-up">
   <div style="max-width:1200px; margin:auto; display:grid; gap:30px;
               grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
 
     <div>
       <h2 style="margin:0;">Analytor</h2>
-      <p style="margin-top:10px;">India’s Scientific UPSC & MPSC Preparation System<br>by <strong>AD Exams Academe (AEA)</strong>.</p>
+      <p style="margin-top:10px; line-height:1.6;">
+        India’s Scientific UPSC & MPSC Preparation System<br>
+        by <strong>AD Exams Academe (AEA)</strong>.
+      </p>
     </div>
 
     <div>
       <h3 style="margin-bottom:12px;">Quick Links</h3>
-      <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
+      <ul style="list-style:none; padding:0; line-height:1.9;">
         <li><a href="/about.html" style="color:#bfe2ff;">About Us</a></li>
         <li><a href="/pricing.html" style="color:#bfe2ff;">Pricing</a></li>
         <li><a href="/courses.html" style="color:#bfe2ff;">Courses</a></li>
@@ -222,7 +297,7 @@ ul {margin-left:20px;}
 
     <div>
       <h3 style="margin-bottom:12px;">Policies</h3>
-      <ul style="list-style:none; padding:0; margin:0; line-height:1.9;">
+      <ul style="list-style:none; padding:0; line-height:1.9;">
         <li><a href="/privacy.html" style="color:#bfe2ff;">Privacy Policy</a></li>
         <li><a href="/terms.html" style="color:#bfe2ff;">Terms & Conditions</a></li>
         <li><a href="/refund.html" style="color:#bfe2ff;">Refund Policy</a></li>
@@ -242,10 +317,24 @@ ul {margin-left:20px;}
 
   <script>
     document.getElementById("year").innerText = new Date().getFullYear();
-  </script>
 
+    /* Header shadow */
+    const headerEl = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 10) headerEl.classList.add("sticky-shadow");
+      else headerEl.classList.remove("sticky-shadow");
+    });
+
+    /* Scroll animations */
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting) e.target.classList.add("visible");
+      });
+    }, {threshold:0.15});
+
+    document.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
+  </script>
 </footer>
-<!-- ========== End Footer ========== -->
 
 </body>
 </html>
